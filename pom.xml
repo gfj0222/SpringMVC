@@ -9,10 +9,9 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>SpringMVC-1</module>
         <module>springmvc-01</module>
         <module>springmvc-02-annotation</module>
-        <module>springmvc-controller</module>
+        <module>springmvc-03-controller</module>
         <module>springmvc-04-json</module>
     </modules>
 
@@ -22,6 +21,11 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.12.0</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
