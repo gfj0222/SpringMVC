@@ -12,4 +12,11 @@ public class ControllerTest2 {
         model.addAttribute("msg","ControlTest2");
         return "test";
     }
+
+
+    public String test2(){
+        //重定向       //重新发送一个请求，不走视图解析器 ，写明路径
+        return "redirect:/index.jsp";
+        //return "redirect:hello.do";   //hello.do为另一个请求
+    }
 }
